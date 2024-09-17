@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .konten {
+            background-color: aqua;
+            border: 2px solid black;
+            padding: 5px;
+            margin: 5px;
+        }
+        
+        .small {
+            flex-grow: 1;
+        }
+        
+        .large {
+            flex-grow: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="konten small">A</div>
+        <div class="konten large">B</div>
+        <div class="konten small">C</div>
+        <div class="konten large">D</div>
+        <div class="konten small">E</div>
+    </div>
+</body>
+
+</html>

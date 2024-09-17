@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid line</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: [cline1] 100px [cline2] auto [cline3] 100px [cline4];
+            grid-template-rows: [rline1] 50px [rline2] auto [rline3] 100px [rline4];
+        }
+        
+        .konten {
+            background-color: lightblue;
+            border: 2px solid blue;
+            padding: 10px;
+            margin: 10px;
+        }
+        
+        .header {
+            background-color: aqua;
+            grid-column-start: cline1;
+            grid-column-end: cline4;
+            grid-row-start: rline1;
+            grid-row-end: rline2;
+        }
+        
+        .footer {
+            background-color: aqua;
+            grid-column-start: cline1;
+            grid-column-end: cline4;
+            grid-row-start: rline3;
+            grid-row-end: rline4;
+        }
+        
+        .konten {
+            background-color: bisque;
+            grid-column-start: cline2;
+            grid-column-end: cline3;
+            grid-row-start: rline2;
+            grid-row-end: rline3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            SELAMAT DATANG DI WEB BEALAJAR BAERSAMA PZN
+        </div>
+        <div class="konten">
+            <h1>Raihan Cuki</h1>
+            <p>Batauerdasarkan hasil drawing pengundian grup yang diselenggarakan Juni lalu di Kuala Lumpur, Malaysia, Timnas Indonesia tergabung di Grup C bersama Jepang, Australia, Arab Saudi, Bahrain, dan China</p>
+            <p>Berdasarkan hasil drawing atau pengundian grup yang diselenggarakan Juni lalu di Kuala Lumpur, Malaysia, Timnas Indonesia tergabung di Grup C bersama Jepang, Australia, Arab Saudi, Bahrain, dan China</p>
+            <p>Berdasarkan hasil drawing atau pengundian grup yang diselenggarakan Juni lalu di Kuala Lumpur, Malaysia, Timnas Indonesia tergabung di Grup C bersama Jepang, Australia, Arab Saudi, Bahrain, dan China</p>
+            <p>Berdasarkan hasil drawing atau pengundian grup yang diselenggarakan Juni lalu di Kuala Lumpur, Malaysia, Timnas Indonesia tergabung di Grup C bersama Jepang, Australia, Arab Saudi, Bahrain, dan China</p>
+            <p>Berdasarkan hasil drawing atau pengundian grup yang diselenggarakan Juni lalu di Kuala Lumpur, Malaysia, Timnas Indonesia tergabung di Grup C bersama Jepang, Australia, Arab Saudi, Bahrain, dan China</p>
+            <p>Berdasarkan hasil drawing atau pengundian grup yang diselenggarakan Juni lalu di Kuala Lumpur, Malaysia, Timnas Indonesia tergabung di Grup C bersama Jepang, Australia, Arab Saudi, Bahrain, dan China</p>
+
+        </div>
+        <div class="footer">
+            Devlop with love by Raihan AIM
+
+        </div>
+    </div>
+</body>
+
+</html>
